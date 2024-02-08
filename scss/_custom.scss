@@ -1,0 +1,114 @@
+﻿/*!
+* Created by Kroplet (https://www.kroplet.com) 
+* The easiest way to create Bootstrap 4 themes. 
+*/
+
+/*****************
+Custom CSS
+*****************/
+::selection {
+  background-color: $primary;
+  color: $white;
+}
+
+a:not(.heading-brand) {
+  font-weight: 500;  
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.heading-brand {
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.svg-icon {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Buttons */
+.btn {
+    transition: all 0.25s ease-in-out;
+
+    &:active, &:focus, &:focus {
+       box-shadow: none !important;
+    }
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+}
+
+/*Forms*/
+.form-control {
+    font-weight: $font-weight-bold;
+}
+
+/*Feature Grid*/
+.feature-grid {
+    margin-top: 3rem;
+
+    .media {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 5rem;
+
+        .media-body {
+            .title {
+                font-size: 1.125rem;
+                font-weight: $font-weight-bold;
+            }
+            .sub-title {
+                color: $gray-500;
+            }
+        }
+    }
+}
+
+/*Press Icons*/
+.press-icons img {
+    &:not(:last-child) {
+        margin-right: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/*footer*/
+footer {
+    ul > li:not(:last-child) {
+        margin-right: 1.5rem !important;
+    }
+
+    a {
+        color: $black;
+        font-weight: $font-weight-bold;
+    }
+}
+
+/* Icon Boxes */
+.icon-box {
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: $light;
+    margin-right: 1rem;
+    color: $primary;
+
+    .icon-box-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+/*Gradients*/
+.bg-gradient {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  lighten($primary, 20%) 0%, $primary 90% );
+}
